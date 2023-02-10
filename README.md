@@ -1,2 +1,2 @@
-# Data Science Studies & Projects
+# Data Science Studies and Projects
  All Data Science Studies files and projects
