@@ -96,6 +96,8 @@ frase.strip()  # remove todos os espaços inúteis, sobrando a frente ou atrás,
 frase.split()  # onde tem espaço ele cria uma divisão de strings, refazendo os indices, que entram dentro de uma lista
 '-'.join(frase)
 
+###################################################################################################
+
 # CONDIÇÕES > IF (se verdadeiro) & ELSE (se falso)
 tempo = 19
 
@@ -109,4 +111,40 @@ print('FIM da avaliação do carro!')
 print('carro novo'if tempo<=3 else 'carro velho')
 
 # CONDIÇÕES ANINHADAS > IF , ELIF, ELSE
-# ESTRUTURAS DE REPETIÇÃO > FOR "LOOP"
+# ESTRUTURAS DE REPETIÇÃO > FOR and WHILE "LOOP"
+
+###################################################################################################
+
+# Variáveis Compostas > Tuplas (), listas [] e dicionários {}
+## TUPLAS
+lanche = ('hamg', 'banana', 'maça', 'pizza')
+print(lanche[2])
+print(lanche[-1])
+print(lanche[:2])
+len(lanche)
+for c in lanche:
+    print(c)
+# tuplas são imutáveis
+for position, comida in enumerate(lanche):
+    print(f'a comida {comida} está na posição {position}!')   # util para usar index e elemento do index
+
+print(sorted(lanche))    # organizaro resultado da tupla em ordem apenas para visualização
+# é possivel somar os elementos de uma tupla a + tupla b por exemplo, na ordem dos elementos somados
+lanche.index('maça')    # mostra a posição de index de um elemento dentro da tupla
+
+## LISTAS
+lanche = ['pizza', 'refri', 'hamb', 'banana']
+# Adicionando elementos
+lanche.append('sorvete')   # adicionou um elemento no final da lista e criou o index
+print(lanche)
+lanche.insert(1, "hotdog")    # adicionou um item no index "1" da lista > movimentou os outros elementos
+lanche[3] = 'tapioca'    # altera o elemento do indice 4 para tapioca
+# Deletando elementos
+del lanche[3]  # apagou o elemento no index 3
+lanche.pop(2)
+lanche.remove('pizza')  # nesse caso você indica o nome do elemento que deseja apagar
+# criar listas
+lista = []
+valores = list(range(4,11))
+valores.sort()   # ordena os valores
+valores.sort(reverse=True)    # ordena ao contrário
